@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b15249c3-ac48-4ee0-b789-8e4b1555bf47" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50915/CompassService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CompassService.xsd" MetadataType="Schema" ID="59a4a42d-6dc6-4370-aed2-ee71e387e2a5" SourceId="1" SourceUrl="http://localhost:50915/CompassService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CompassService1.xsd" MetadataType="Schema" ID="b45d8d82-df4b-4179-9bc2-ea1d8bb77e39" SourceId="1" SourceUrl="http://localhost:50915/CompassService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CompassService2.xsd" MetadataType="Schema" ID="229975d8-7a58-4cbd-b134-7dced7214bc9" SourceId="1" SourceUrl="http://localhost:50915/CompassService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CompassService.wsdl" MetadataType="Wsdl" ID="24ff7572-e4cd-4852-83a9-0cbb03eab6dc" SourceId="1" SourceUrl="http://localhost:50915/CompassService.svc?wsdl" />
+    <MetadataFile FileName="CompassService.disco" MetadataType="Disco" ID="c89a83e0-4455-4280-8868-e107333d21b5" SourceId="1" SourceUrl="http://localhost:50915/CompassService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

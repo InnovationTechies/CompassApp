@@ -45,6 +45,7 @@
     <Reference Include="Mono.Android" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -90,16 +91,27 @@
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
-    <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\WcfServiceCompassLibrary\WcfServiceCompassLibrary.csproj">
+      <Project>{fe9b3e19-941a-4193-9c76-6d328be77088}</Project>
+      <Name>WcfServiceCompassLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComapassApp\ComapassApp.csproj">
       <Project>{FBF946D8-345E-4997-A95F-C635566F51B3}</Project>
       <Name>ComapassApp</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Specials.axml" />
+    <AndroidResource Include="Resources\layout\TheSpecials.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\shape.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\oreos1.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -8,7 +8,7 @@ using Android.Widget;
 using System.Threading;
 
 using Android.Content;
-
+using WcfServiceCompassLibrary;
 
 //using E_CompassApp.localhost;
 //using PnpProducts = E_CompassApp.localhost.PnpProducts;
@@ -24,15 +24,10 @@ namespace ComapassApp.Droid
         //private localhost.EcompassService _client;
         //public EcompassContext _client { get; set; }
 
-
         private TextView txtSpecials;
-        private string str;
-        private ListView listSpecials;  
-        //private PnpProducts[] Products { get; set; }
-        public ArrayAdapter<string> ListAdapter { get; private set; }
-        //public EcompassService Client { get => _client; set => _client = value; }
 
-        private Button btnLoad;
+        public string Str { get; set; } = null;
+        public Button BtnLoad { get; set; } = null;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -40,17 +35,18 @@ namespace ComapassApp.Droid
             // Create your application here
             try
             {
-                SetContentView(Resource.Layout.Specials);
+                SetContentView(Resource.Layout.TheSpecials);
 
                 txtSpecials = FindViewById<TextView>(Resource.Id.txtSpecials);
-                listSpecials = FindViewById<ListView>(Resource.Id.listSpecials);
+                //listSpecials = FindViewById<ListView>(Resource.Id.listSpecials);
 
-                btnLoad = FindViewById<Button>(Resource.Id.btnLoadDB);
                 //InitializeEcompassServiceClient();
                 //ListSpecials();
                 //ListAdapter = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, Products.Length);
 
-                btnLoad.Click += BtnLoad_Click;
+
+                BtnLoad = FindViewById<Button>(Resource.Id.btnLoadDB);
+                BtnLoad.Click += BtnLoad_Click;
             }
             catch (Exception ex)
             {
@@ -96,7 +92,7 @@ namespace ComapassApp.Droid
 
                 //txtSpecials.Text = "SPECIALS";
                     
-                txtSpecials.Text = str;
+                txtSpecials.Text = Str;
                 
             }
             catch (Exception ex)

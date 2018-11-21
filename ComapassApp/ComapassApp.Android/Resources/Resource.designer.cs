@@ -2342,26 +2342,26 @@ namespace ComapassApp.Droid
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f02012f
-			public const int avd_hide_password_1 = 2130837807;
-			
-			// aapt resource value: 0x7f020130
-			public const int avd_hide_password_2 = 2130837808;
-			
 			// aapt resource value: 0x7f020131
-			public const int avd_hide_password_3 = 2130837809;
+			public const int avd_hide_password_1 = 2130837809;
+			
+			// aapt resource value: 0x7f020132
+			public const int avd_hide_password_2 = 2130837810;
+			
+			// aapt resource value: 0x7f020133
+			public const int avd_hide_password_3 = 2130837811;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f020132
-			public const int avd_show_password_1 = 2130837810;
-			
-			// aapt resource value: 0x7f020133
-			public const int avd_show_password_2 = 2130837811;
-			
 			// aapt resource value: 0x7f020134
-			public const int avd_show_password_3 = 2130837812;
+			public const int avd_show_password_1 = 2130837812;
+			
+			// aapt resource value: 0x7f020135
+			public const int avd_show_password_2 = 2130837813;
+			
+			// aapt resource value: 0x7f020136
+			public const int avd_show_password_3 = 2130837814;
 			
 			// aapt resource value: 0x7f020055
 			public const int design_bottom_navigation_item_background = 2130837589;
@@ -2999,11 +2999,11 @@ namespace ComapassApp.Droid
 			// aapt resource value: 0x7f020128
 			public const int notification_icon_background = 2130837800;
 			
-			// aapt resource value: 0x7f02012d
-			public const int notification_template_icon_bg = 2130837805;
+			// aapt resource value: 0x7f02012f
+			public const int notification_template_icon_bg = 2130837807;
 			
-			// aapt resource value: 0x7f02012e
-			public const int notification_template_icon_low_bg = 2130837806;
+			// aapt resource value: 0x7f020130
+			public const int notification_template_icon_low_bg = 2130837808;
 			
 			// aapt resource value: 0x7f020129
 			public const int notification_tile_bg = 2130837801;
@@ -3012,10 +3012,16 @@ namespace ComapassApp.Droid
 			public const int notify_panel_notification_icon_bg = 2130837802;
 			
 			// aapt resource value: 0x7f02012b
-			public const int tooltip_frame_dark = 2130837803;
+			public const int oreos1 = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int tooltip_frame_light = 2130837804;
+			public const int shape = 2130837804;
+			
+			// aapt resource value: 0x7f02012d
+			public const int tooltip_frame_dark = 2130837805;
+			
+			// aapt resource value: 0x7f02012e
+			public const int tooltip_frame_light = 2130837806;
 			
 			static Drawable()
 			{
@@ -3134,6 +3140,9 @@ namespace ComapassApp.Droid
 			
 			// aapt resource value: 0x7f09003d
 			public const int bottom = 2131296317;
+			
+			// aapt resource value: 0x7f0900cb
+			public const int btnLoadDB = 2131296459;
 			
 			// aapt resource value: 0x7f090063
 			public const int buttonPanel = 2131296355;
@@ -3264,6 +3273,9 @@ namespace ComapassApp.Droid
 			// aapt resource value: 0x7f09005f
 			public const int image = 2131296351;
 			
+			// aapt resource value: 0x7f0900c9
+			public const int imageView2 = 2131296457;
+			
 			// aapt resource value: 0x7f0900c0
 			public const int info = 2131296448;
 			
@@ -3285,20 +3297,26 @@ namespace ComapassApp.Droid
 			// aapt resource value: 0x7f090018
 			public const int line3 = 2131296280;
 			
+			// aapt resource value: 0x7f0900c7
+			public const int linearLayout2 = 2131296455;
+			
 			// aapt resource value: 0x7f09001d
 			public const int listMode = 2131296285;
+			
+			// aapt resource value: 0x7f0900cc
+			public const int listSpecials = 2131296460;
 			
 			// aapt resource value: 0x7f090061
 			public const int list_item = 2131296353;
 			
-			// aapt resource value: 0x7f0900ca
-			public const int masked = 2131296458;
+			// aapt resource value: 0x7f0900d0
+			public const int masked = 2131296464;
 			
 			// aapt resource value: 0x7f0900b9
 			public const int media_actions = 2131296441;
 			
-			// aapt resource value: 0x7f0900c8
-			public const int message = 2131296456;
+			// aapt resource value: 0x7f0900ce
+			public const int message = 2131296462;
 			
 			// aapt resource value: 0x7f090031
 			public const int middle = 2131296305;
@@ -3383,6 +3401,9 @@ namespace ComapassApp.Droid
 			
 			// aapt resource value: 0x7f090028
 			public const int multiply = 2131296296;
+			
+			// aapt resource value: 0x7f0900ca
+			public const int myImageViewText = 2131296458;
 			
 			// aapt resource value: 0x7f090093
 			public const int navigation_header_container = 2131296403;
@@ -3588,8 +3609,8 @@ namespace ComapassApp.Droid
 			// aapt resource value: 0x7f09006f
 			public const int title_template = 2131296367;
 			
-			// aapt resource value: 0x7f0900c7
-			public const int toolbar = 2131296455;
+			// aapt resource value: 0x7f0900cd
+			public const int toolbar = 2131296461;
 			
 			// aapt resource value: 0x7f09003e
 			public const int top = 2131296318;
@@ -3615,6 +3636,9 @@ namespace ComapassApp.Droid
 			// aapt resource value: 0x7f090013
 			public const int transition_transform = 2131296275;
 			
+			// aapt resource value: 0x7f0900c8
+			public const int txtSpecials = 2131296456;
+			
 			// aapt resource value: 0x7f09002d
 			public const int uniform = 2131296301;
 			
@@ -3627,8 +3651,8 @@ namespace ComapassApp.Droid
 			// aapt resource value: 0x7f090016
 			public const int view_offset_helper = 2131296278;
 			
-			// aapt resource value: 0x7f0900c9
-			public const int visible = 2131296457;
+			// aapt resource value: 0x7f0900cf
+			public const int visible = 2131296463;
 			
 			// aapt resource value: 0x7f0900ab
 			public const int volume_item_container = 2131296427;
@@ -3922,10 +3946,13 @@ namespace ComapassApp.Droid
 			public const int Tabbar = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int Toolbar = 2130968642;
+			public const int TheSpecials = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int tooltip = 2130968643;
+			public const int Toolbar = 2130968643;
+			
+			// aapt resource value: 0x7f040044
+			public const int tooltip = 2130968644;
 			
 			static Layout()
 			{

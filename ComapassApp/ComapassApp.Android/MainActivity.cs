@@ -18,8 +18,8 @@ namespace ComapassApp.Droid
             //ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
-            //global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            //LoadApplication(new App());
+            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            LoadApplication(new App());
 
 
             StartActivity(typeof(SpecialsActivity));

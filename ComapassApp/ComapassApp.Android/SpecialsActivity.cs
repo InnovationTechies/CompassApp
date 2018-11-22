@@ -8,7 +8,10 @@ using Android.Widget;
 using System.Threading;
 
 using Android.Content;
-using WcfServiceCompassLibrary;
+using System.Net.Http;
+using System.Collections.Generic;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
 
 //using E_CompassApp.localhost;
 //using PnpProducts = E_CompassApp.localhost.PnpProducts;
@@ -25,7 +28,6 @@ namespace ComapassApp.Droid
         //public EcompassContext _client { get; set; }
 
         private TextView txtSpecials;
-
         public string Str { get; set; } = null;
         public Button BtnLoad { get; set; } = null;
 
@@ -52,9 +54,21 @@ namespace ComapassApp.Droid
             {
                 Console.WriteLine(ex.Message);
             }
-            
-         
+
+
         }
+
+        //public async Task<PnpProducts> GetDepts()
+        //{
+        //    using (var client = new HttpClient())
+        //    {
+        //        client.BaseAddress = new Uri("http://<localhost/CompassApi>/");
+        //        client.DefaultRequestHeaders.Accept.Clear();
+        //        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+        //        return await client.GetAsync("/api/dept");
+        //    }
+        //}
 
         private void BtnLoad_Click(object sender, EventArgs e)
         {
@@ -91,9 +105,9 @@ namespace ComapassApp.Droid
                 }).Start();
 
                 //txtSpecials.Text = "SPECIALS";
-                    
+
                 txtSpecials.Text = Str;
-                
+
             }
             catch (Exception ex)
             {

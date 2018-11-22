@@ -9,6 +9,15 @@
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+        <RelativeLayout>
+            <ListView ItemsSource="">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="" Detail="" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </RelativeLayout>
         
     </StackLayout>
 

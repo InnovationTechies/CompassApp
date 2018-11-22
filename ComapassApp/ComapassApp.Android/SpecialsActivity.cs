@@ -12,9 +12,12 @@ using System.Net.Http;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using System.Collections.ObjectModel;
 
 //using E_CompassApp.localhost;
 //using PnpProducts = E_CompassApp.localhost.PnpProducts;
+
 
 namespace ComapassApp.Droid
 {

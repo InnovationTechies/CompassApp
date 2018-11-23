@@ -6,14 +6,9 @@ using System.ServiceModel;
 using System;
 using Android.Widget;
 using System.Threading;
-
-using Android.Content;
 using System.Net.Http;
 using System.Collections.Generic;
-using System.Net.Http.Headers;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
-using System.Collections.ObjectModel;
 
 //using E_CompassApp.localhost;
 //using PnpProducts = E_CompassApp.localhost.PnpProducts;
@@ -31,6 +26,8 @@ namespace ComapassApp.Droid
         //public EcompassContext _client { get; set; }
 
         private TextView txtSpecials;
+        private ListView listSpecials;
+
         public string Str { get; set; } = null;
         public Button BtnLoad { get; set; } = null;
 
@@ -43,12 +40,10 @@ namespace ComapassApp.Droid
                 SetContentView(Resource.Layout.TheSpecials);
 
                 txtSpecials = FindViewById<TextView>(Resource.Id.txtSpecials);
-                //listSpecials = FindViewById<ListView>(Resource.Id.listSpecials);
+                listSpecials = FindViewById<ListView>(Resource.Id.listSpecials);
 
                 //InitializeEcompassServiceClient();
                 //ListSpecials();
-                //ListAdapter = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, Products.Length);
-
 
                 BtnLoad = FindViewById<Button>(Resource.Id.btnLoadDB);
                 BtnLoad.Click += BtnLoad_Click;
@@ -61,17 +56,18 @@ namespace ComapassApp.Droid
 
         }
 
-        //public async Task<PnpProducts> GetDepts()
-        //{
-        //    using (var client = new HttpClient())
-        //    {
-        //        client.BaseAddress = new Uri("http://<localhost/CompassApi>/");
-        //        client.DefaultRequestHeaders.Accept.Clear();
-        //        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+        public  async void GetProducts()
+        {
+            var client = new HttpClient();
+            var response = await client.GetStreamAsync("http://localhost/CompassApi/Help/Api/GET-api-PnpProducts");
 
-        //        return await client.GetAsync("/api/dept");
-        //    }
-        //}
+            var products =JsonConvert.DeserializeObject<List<PnpProducts>>(response.ToString());
+            listSpecials.Adapter= new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, products[0].ProductID);
+
+        }
+
+
+
 
         private void BtnLoad_Click(object sender, EventArgs e)
         {
